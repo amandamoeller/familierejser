@@ -1,0 +1,538 @@
+/*---------GLOBAL----------*/
+
+* {
+    margin: 0;
+    font-family: raleway;
+}
+
+/*HEADER*/
+
+header {
+    width: 100%;
+    background-size: 100%;
+
+}
+
+header img {
+    width: 100%;
+    
+
+}
+
+
+/*NAV*/
+
+#flex-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+
+}
+
+.menu {
+    overflow: hidden;
+    background-color: #dbe8da;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    list-style-type: none
+}
+
+.menu li a:hover {
+    background-color: #9fc19c;
+}
+
+.menu a {
+    float: left;
+    display: inline;
+    text-align: center;
+    padding: 14px 9px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    color: #3e4c30;
+
+}
+
+
+
+/*FORSIDE*/
+
+#fogb {
+    width: 100%
+}
+
+.ftext {
+    color: #597051;
+    font-size: 100%;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 5% 5% 5% 5%
+}
+
+.ctext {
+    text-align: center;
+    color: #9fc19c;
+    line-height: 1.6;
+    font-size: 120%;
+    margin: 5%;
+}
+
+.ktext {
+    color: #597051;
+    font-size: 250%;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 10%;
+}
+
+.gtext {
+    color: #29352a;
+    font-size: 100%;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.qtext {
+    color: #663e3b;
+    font-size: 100%;
+    text-align: left;
+    line-height: 1.6;
+}
+
+aside {
+    margin: 5%;
+    padding: 3%;
+    background-color: #9fc19c;
+}
+
+
+
+#rating {
+    width: 80%;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+}
+
+/*DESTINATIONER*/
+
+#banner {
+    width: 100%;
+}
+
+#destinationer {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    list-style-type: none;
+    background-color: white;
+}
+
+#destinationer li {
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+#destinationer li a:hover {
+    background-color: #9fc19c;
+}
+
+#destinationer a {
+    float: left;
+    display: inline;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    color: #3e4c30;
+
+}
+
+.fotots {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%
+}
+
+
+.pitext {
+    color: #996961;
+    font-size: 100%;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 5% 5% 5% 5%
+}
+
+.pintext {
+    color: #9b5d52;
+    font-size: 250%;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 5%;
+}
+
+.atext {
+    color: #9b5d52;
+    font-size: 150%;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 5%;
+}
+
+.btext {
+    color: #597051;
+    font-size: 150%;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 10%;
+}
+
+.pink-aside {
+    background-color: #eaa59f;
+}
+
+#pink-textf {
+    font-size: 100%;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 5%;
+    color: #996961;
+}
+
+/*KONTAKT*/
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    display: block;
+    min-width: 20%;
+    max-width: 50%;
+}
+
+.gron-aside {
+    color: #29352a;
+    font-size: 100%;
+    text-align: left;
+    line-height: 1.6;
+    align-self: center;
+    margin: 5%;
+}
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    padding-bottom: 12%;
+    align-content: space-between;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+footer p {
+    color: #597051;
+    font-size: 70%;
+    text-align: justify;
+    line-height: 1.6;
+    padding-left: 2%;
+}
+
+/*----------MOBIL----------*/
+
+@media only screen and (max-width: 500px) {
+    .menu {
+        overflow: hidden;
+        background-color: #dbe8da;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        list-style-type: none
+    }
+
+    #slider {
+        display: none;
+    }
+    #landskab {
+        display: none;
+    }
+
+    .dbilleder {
+        display: none;
+    }
+
+    .dbilleder1 {
+        display: none;
+    }
+}
+
+
+/*-------TABLET-------*/
+
+@media only screen and (min-width: 501px) {
+
+    #fogb {
+
+        display: none;
+    }
+    #destinationer {
+        display: none;
+    }
+    .fotots {
+        display: none;
+
+    }
+    /*FOOTER*/
+    footer {
+        display: flex;
+        padding-bottom: 2%;
+        align-content: space-around;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: nowrap;
+
+    }
+
+    footer p {
+        color: #597051;
+        font-size: 95%;
+        text-align: justify;
+        line-height: 1.6;
+        padding-left: 2%;
+    }
+
+
+    /*---------DESKTOP---------*/
+    @media only screen and (min-width:681px) {
+
+        .menu {
+            overflow: hidden;
+            background-color: #dbe8da;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: inline-blsock;
+            list-style-type: none;
+        }
+
+        header {
+            background-image: url('../images/banner3.jpg');
+        }
+
+        /*FORSIDE*/
+        #slider {
+            margin: 8%;
+            display: flex;
+            justify-content: center;
+        }
+        #flex1 {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #flex1 .ctext {
+            order: 1;
+        }
+        aside {
+            width: 300px;
+            margin: 5px;
+
+        }
+
+        .qcon {
+            width: 300px;
+            margin: 5px;
+
+
+
+        }
+        aside,
+        section {
+
+            vertical-align: top;
+            word-wrap: break-word;
+        }
+
+        #forside1 {
+            display: flex;
+            align-content: space-between;
+            justify-content: center;
+            padding-top: 5%;
+
+        }
+
+        #forside1 .ftext {
+            order: -1;
+            width: 40%;
+        }
+
+        #forside2 {
+            display: flex;
+            padding-top: 5%;
+            justify-content: center;
+
+        }
+        #pink-textf {
+            font-size: 100%;
+            text-align: justify;
+            line-height: 1.6;
+            margin: 5%;
+            color: #996961;
+        }
+
+        #forside2 #pink-textf {
+            width: 40%;
+            order: 1;
+        }
+
+        .pink-aside {
+            background-color: #eaa59f;
+            align-self: center;
+            margin: 5%;
+
+        }
+
+        #gron-aside {
+            color: #29352a;
+            font-size: 100%;
+            text-align: left;
+            line-height: 1.6;
+            align-self: center;
+            margin: 5%;
+        }
+
+
+        /*FERIEMÅL*/
+        .dcontainer {
+            display: flex;
+
+        }
+
+        .dbilleder,
+        .dbilleder1 {
+            width: 40%;
+            height: 40%;
+            padding: 5%;
+        }
+
+        .dbilleder1 {
+            order: -1;
+        }
+
+        .dcontainer p {
+            align-self: center;
+        }
+
+        /*PROGRAMMER*/
+        .btext,
+        .atext {
+            font-size: 300%;
+        }
+
+        #landskab {
+            padding-top: 10%;
+            padding-bottom: 10%;
+            width: 100%
+        }
+
+        #page1,
+        #page2,
+        #page3,
+        #page4 {
+            display: flex;
+            align-content: space-around;
+            justify-content: center;
+
+        }
+
+        #page1 .ftext,
+        #page3 .ftext,
+        #page2 .pitext,
+        #page4 .pitext {
+            padding: 10%;
+        }
+
+
+        .gron-aside {
+            order: -1;
+            margin: 10%;
+            text-align: center;
+
+        }
+
+        .pink-aside {
+            margin: 10%;
+            text-align: center;
+            color:
+        }
+
+
+        #page3 aside {
+            margin: 100px;
+            text-align: center;
+        }
+
+
+
+        #destinationer {
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            list-style-type: none;
+            background-color: white;
+        }
+
+        #destinationer {
+            display: none;
+        }
+
+        #fogb {
+            display: none;
+        }
+
+        .fotots {
+            display: none;
+        }
+
+        .ktext {
+            font-size: 500%;
+            margin-top: 5%;
+        }
+
+        .ctext {
+            margin: 0;
+        }
+
+        /*FOOTER*/
+        footer {
+            display: flex;
+            padding-bottom: 2%;
+            align-content: space-around;
+            justify-content: center;
+            width: 100%;
+            flex-wrap: nowrap;
+
+        }
+
+        footer p {
+            color: #597051;
+            font-size: 95%;
+            line-height: 1.6;
+            padding-left: 2%;
+        }
